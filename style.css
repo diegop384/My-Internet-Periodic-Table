@@ -1,0 +1,161 @@
+:root{
+    --green-code-border: #34CF93;
+    --green-code: #1f9e6d;
+    --violet-social-border: #C751E8;
+    --violet-social: #8725a1;
+    --red-spend-border: #F23838;
+    --red-spend: #b61b1b;
+}
+
+/*font-family: 'Josefin Sans', sans-serif;*/
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    background-color: #010d0f;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+.periodic-table{
+    width: 100%;
+    display: grid;
+    grid-template: repeat(5,1fr)/ repeat(7,1fr) ;
+    gap: 7px;
+}
+
+.periodic-table div{
+    position: relative;
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px 10px 10px;
+    gap: 2px;
+    border-radius: 5px;
+}
+
+.periodic-table div:hover{
+    transition: 0.2s;
+    background-color: transparent;
+}
+
+.periodic-table div>h3{
+    font-size: 25px;
+    margin: 0;
+}
+
+.periodic-table div > p{
+    font-size: 10px;
+    margin: 0;
+}
+
+div:nth-of-type(1){
+    grid-column: span 6;
+}
+
+div:nth-of-type(17){
+    grid-column: 6/ span 1;
+}
+
+.CodeItem{
+    background-color: var(--green-code);
+}
+
+.CodeItem:hover{
+    border: var(--green-code-border) solid 3px;
+}
+
+.SocialMedia{
+    background-color: var(--violet-social);
+}
+
+.SocialMedia:hover{
+    border: var(--violet-social-border) solid 3px;
+}
+
+.SpendTime{
+    background-color: var(--red-spend);
+}
+
+.SpendTime:hover{
+    border: var(--red-spend-border) solid 3px;
+}
+
+div:hover::before{
+    position: absolute;
+    width: 120px;
+    content: '';
+    padding: 7px;
+    color: black;
+    background-color: white;
+    bottom: -30px;
+    right: -100px;
+    z-index: 1;
+    transition: 0.7s;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.CodeItem:nth-of-type(1):hover::before{
+    content: 'Simply the best dev platform in Latam 💚';
+}
+
+.CodeItem:nth-of-type(2):hover::before{
+    content: 'Development would be more painful without this';
+}
+
+.CodeItem:nth-of-type(3):hover::before{
+    content: 'After use this, you never take notes in other place';
+}
+
+.CodeItem:nth-of-type(4):hover::before{
+    content: 'No IDE hits your heels';
+}
+
+.CodeItem:nth-of-type(5):hover::before{
+    content: 'I love this CLI';
+}
+
+.CodeItem:nth-of-type(6):hover::before{
+    content: 'My relationship with GitHub is really toxic';
+}
+
+.CodeItem:nth-of-type(7):hover::before{
+    content: 'The best platform for programming challenges';
+}
+
+.SocialMedia:nth-of-type(8):hover::before{
+    content: 'I hope you don\'t copy this too';
+}
+
+.SocialMedia:nth-of-type(9):hover::before{
+    content: 'A black hole that you exit 6 hours later';
+}
+
+.SocialMedia:nth-of-type(10):hover::before{
+    content: 'The place where you say \'Hell there are really crazy people\'';
+}
+
+.SocialMedia:nth-of-type(11):hover::before{
+    content: 'No Youtube, I don\'t want Youtube Premium';
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    transition: 0.5s;
+    color: gray;
+}
