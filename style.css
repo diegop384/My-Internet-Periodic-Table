@@ -14,7 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 7px;
-    background-color: #010d0f;
+    background-color: #01161a;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -41,12 +41,12 @@ header{
     align-items: flex-start;
     padding: 20px 10px 10px;
     gap: 2px;
-    border-radius: 5px;
 }
 
 .periodic-table div:hover{
     transition: 0.2s;
     background-color: transparent;
+    cursor: default;
 }
 
 .periodic-table div>h3{
@@ -106,6 +106,10 @@ div:hover::before{
     font-size: 12px;
 }
 
+div::before{
+    transition: 0.5s;
+}
+
 .CodeItem:nth-of-type(1):hover::before{
     content: 'Simply the best dev platform in Latam 💚';
 }
@@ -148,6 +152,34 @@ div:hover::before{
 
 .SocialMedia:nth-of-type(11):hover::before{
     content: 'No Youtube, I don\'t want Youtube Premium';
+}
+
+.SocialMedia:nth-of-type(12):hover::before{
+    content: 'The war field best adapted to today\'s society';
+}
+
+.SocialMedia:nth-of-type(13):hover::before{
+    content: 'More and more bizarre';
+}
+
+.SpendTime:nth-of-type(14):hover::before{
+    content: 'The closest thing to a God, it\'s omnipresent and knows everything about us';
+}
+
+.SpendTime:nth-of-type(15):hover::before{
+    content: 'Difficult but really addictive';
+}
+
+.SpendTime:nth-of-type(16):hover::before{
+    content: 'Because the code without music doesn\'t compile';
+}
+
+.SpendTime:nth-of-type(17):hover::before{
+    content: 'One of my favorite places in the web';
+}
+
+.SpendTime:nth-of-type(18):hover::before{
+    content: 'The best message app';
 }
 
 footer a{
